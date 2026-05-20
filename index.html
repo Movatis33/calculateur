@@ -15,38 +15,27 @@
       color:#e2e8f0;padding:16px 16px 48px;display:flex;justify-content:center;
     }
     .wrap{width:100%;max-width:460px}
-
-    /* HEADER */
     .hdr{text-align:center;margin-bottom:22px}
     .logo{height:60px;width:auto;border-radius:10px;margin-bottom:12px}
     .hdr-sub{font-size:11px;color:#9AB3DC;letter-spacing:3px;text-transform:uppercase}
-
-    /* NAV TABS */
-    .nav{display:flex;gap:6px;margin-bottom:20px}
+    .nav{display:flex;gap:5px;margin-bottom:20px;flex-wrap:wrap}
     .nav-btn{
-      flex:1;padding:11px 4px;border-radius:12px;font-size:12px;font-weight:700;
+      flex:1;min-width:60px;padding:10px 3px;border-radius:12px;font-size:11px;font-weight:700;
       cursor:pointer;transition:all .2s;border:1px solid rgba(64,129,195,.2);
       background:rgba(255,255,255,.04);color:#9AB3DC;text-align:center;letter-spacing:.3px
     }
     .nav-btn.on-ph{background:rgba(64,129,195,.2);border-color:rgba(64,129,195,.5);color:#fff}
     .nav-btn.on-chlore{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.5);color:#86efac}
     .nav-btn.on-sel{background:rgba(251,191,36,.12);border-color:rgba(251,191,36,.45);color:#fde68a}
-
-    /* CARD */
+    .nav-btn.on-cellule{background:rgba(167,139,250,.15);border-color:rgba(167,139,250,.5);color:#c4b5fd}
     .card{
       background:rgba(255,255,255,.05);border-radius:20px;
       border:1px solid rgba(64,129,195,.25);backdrop-filter:blur(12px);
       -webkit-backdrop-filter:blur(12px);padding:24px 20px;
       box-shadow:0 20px 60px rgba(0,0,0,.4)
     }
-
-    /* LABEL */
     .lbl{display:block;font-size:11px;color:#9AB3DC;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
-
-    /* SECTION */
     .sec{margin-bottom:22px}
-
-    /* SLIDER ROW */
     .slider-row{display:flex;gap:10px;align-items:center}
     input[type=range]{flex:1;accent-color:#4081C3;cursor:pointer;height:4px}
     .num-wrap{display:flex;align-items:center;gap:4px}
@@ -56,8 +45,6 @@
       text-align:center;padding:6px 3px;outline:none
     }
     .num-unit{color:#9AB3DC;font-size:13px}
-
-    /* TOGGLE CIBLE */
     .cible-toggle{display:flex;gap:6px;margin-bottom:18px}
     .cible-btn{
       flex:1;padding:9px 4px;border-radius:10px;font-size:12px;font-weight:600;
@@ -65,8 +52,6 @@
       background:rgba(255,255,255,.04);color:#888;text-align:center;transition:all .2s
     }
     .cible-btn.active{background:rgba(64,129,195,.2);border-color:rgba(64,129,195,.5);color:#fff;font-weight:700}
-
-    /* PH GRID */
     .ph-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
     .ph-btn{
       padding:10px 2px;border-radius:10px;font-size:13px;cursor:pointer;
@@ -78,13 +63,9 @@
       font-size:8px;background:#166534;color:#86efac;border-radius:4px;
       padding:1px 5px;white-space:nowrap
     }
-
-    /* STATUS ROW */
     .status-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
     .status-dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:5px;transition:all .3s}
     .status-txt{font-size:12px;font-weight:600;transition:color .3s}
-
-    /* SUBTABS (pH- / pH+) */
     .subtabs{display:flex;gap:6px;margin-bottom:18px}
     .subtab{
       flex:1;padding:9px 4px;border-radius:10px;font-size:12px;font-weight:600;
@@ -93,14 +74,14 @@
     }
     .subtab.on-moins{background:rgba(239,68,68,.15);border-color:rgba(239,68,68,.5);color:#fca5a5}
     .subtab.on-plus{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.5);color:#86efac}
-
-    /* RESULT BOX */
     .res{border-radius:16px;padding:20px;text-align:center;transition:all .35s;margin-bottom:0}
     .res.ok{background:rgba(64,129,195,.08);border:1px solid rgba(64,129,195,.3)}
     .res.action-red{background:linear-gradient(135deg,rgba(239,68,68,.15),rgba(239,68,68,.05));border:1px solid rgba(239,68,68,.35)}
     .res.action-green{background:linear-gradient(135deg,rgba(34,197,94,.15),rgba(34,197,94,.05));border:1px solid rgba(34,197,94,.35)}
     .res.action-blue{background:linear-gradient(135deg,rgba(64,129,195,.18),rgba(64,129,195,.06));border:1px solid rgba(64,129,195,.4)}
     .res.action-yellow{background:linear-gradient(135deg,rgba(251,191,36,.15),rgba(251,191,36,.05));border:1px solid rgba(251,191,36,.4)}
+    .res.action-purple{background:linear-gradient(135deg,rgba(167,139,250,.15),rgba(167,139,250,.05));border:1px solid rgba(167,139,250,.4)}
+    .res.action-orange{background:linear-gradient(135deg,rgba(249,115,22,.15),rgba(249,115,22,.05));border:1px solid rgba(249,115,22,.4)}
     .res.pulse{animation:pulse .4s ease}
     @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.025)}}
     .res-lbl{font-size:11px;color:#9AB3DC;text-transform:uppercase;letter-spacing:2px;margin-bottom:8px}
@@ -113,8 +94,6 @@
     .res-ok-ico{font-size:34px;margin-bottom:6px}
     .res-ok-title{font-size:17px;font-weight:700}
     .res-ok-sub{font-size:12px;margin-top:5px;opacity:.75}
-
-    /* PASSES */
     .passes{margin-top:10px;padding:13px 14px;border-radius:12px;background:rgba(64,129,195,.1);border:1px solid rgba(64,129,195,.25)}
     .passes-title{font-size:11px;color:#9AB3DC;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px}
     .passes-grid{display:flex;justify-content:space-around;flex-wrap:wrap;gap:6px}
@@ -123,15 +102,12 @@
     .passe-unit{font-size:11px;color:#9AB3DC;margin-left:2px}
     .passe-lbl{font-size:10px;color:rgba(255,255,255,.4);margin-top:2px}
     .passes-note{font-size:10px;color:rgba(154,179,220,.7);margin-top:8px}
-
-    /* CONSEIL */
     .conseil{margin-top:10px;padding:11px 13px;border-radius:12px;font-size:11px;line-height:1.6}
     .conseil.c-red{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.2);color:#fca5a5}
     .conseil.c-green{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);color:#86efac}
     .conseil.c-blue{background:rgba(64,129,195,.08);border:1px solid rgba(64,129,195,.25);color:#9AB3DC}
     .conseil.c-yellow{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.2);color:#fde68a}
-
-    /* INFO BADGE */
+    .conseil.c-purple{background:rgba(167,139,250,.08);border:1px solid rgba(167,139,250,.25);color:#c4b5fd}
     .info-badge{
       display:flex;align-items:center;gap:8px;
       border-radius:10px;padding:9px 13px;margin-bottom:18px;font-size:12px
@@ -139,8 +115,9 @@
     .info-badge.ib-blue{background:rgba(64,129,195,.08);border:1px solid rgba(64,129,195,.2);color:#9AB3DC}
     .info-badge.ib-green{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2);color:#86efac}
     .info-badge.ib-yellow{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.2);color:#fde68a}
-
-    /* CHLORE TYPE BTNS */
+    .info-badge.ib-purple{background:rgba(167,139,250,.07);border:1px solid rgba(167,139,250,.2);color:#c4b5fd}
+    .info-badge.ib-red{background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.2);color:#fca5a5}
+    .info-badge.ib-orange{background:rgba(249,115,22,.07);border:1px solid rgba(249,115,22,.2);color:#fdba74}
     .type-btns{display:flex;gap:6px;margin-bottom:18px}
     .type-btn{
       flex:1;padding:10px 4px;border-radius:10px;font-size:12px;font-weight:600;
@@ -148,37 +125,63 @@
       border:1px solid rgba(64,129,195,.2);background:rgba(255,255,255,.04);color:#9AB3DC
     }
     .type-btn.tb-on{background:rgba(34,197,94,.15);border-color:rgba(34,197,94,.5);color:#86efac;font-weight:700}
-
-    /* FOOTER */
+    /* CELLULE SPECIFIQUE */
+    .cell-type-btns{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:18px}
+    .cell-type-btn{
+      padding:10px 6px;border-radius:10px;font-size:11px;font-weight:600;
+      cursor:pointer;text-align:center;transition:all .2s;
+      border:1px solid rgba(167,139,250,.2);background:rgba(255,255,255,.04);color:#9AB3DC;line-height:1.4
+    }
+    .cell-type-btn.ctb-on{background:rgba(167,139,250,.18);border-color:rgba(167,139,250,.55);color:#c4b5fd}
+    .tension-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:4px}
+    .t-btn{
+      padding:9px 2px;border-radius:10px;font-size:12px;cursor:pointer;
+      transition:all .18s;
+      border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#888;text-align:center
+    }
+    .cell-diag-row{display:flex;gap:10px;margin-bottom:14px}
+    .cell-diag-col{flex:1}
+    .cell-diag-lbl{font-size:10px;color:#9AB3DC;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}
+    .ref-table{width:100%;border-collapse:collapse;font-size:11px;margin-top:8px}
+    .ref-table th{color:#9AB3DC;font-weight:600;padding:5px 4px;text-align:left;border-bottom:1px solid rgba(255,255,255,.08)}
+    .ref-table td{padding:5px 4px;border-bottom:1px solid rgba(255,255,255,.04);color:#ccc}
+    .ref-table tr:last-child td{border-bottom:none}
+    .tg{color:#22c55e}.tw{color:#f97316}.tr{color:#ef4444}
+    /* GUIDE PINCE */
+    .guide-step{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.06);align-items:flex-start}
+    .guide-step:last-child{border-bottom:none}
+    .step-num{min-width:26px;height:26px;border-radius:50%;background:rgba(167,139,250,.2);border:1px solid rgba(167,139,250,.4);color:#c4b5fd;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+    .step-content{flex:1}
+    .step-title{font-size:13px;font-weight:700;color:#e2e8f0;margin-bottom:3px}
+    .step-body{font-size:11px;color:#9AB3DC;line-height:1.5}
+    .step-body strong{color:#c4b5fd}
+    .step-warn{font-size:11px;color:#fca5a5;margin-top:4px;padding:5px 8px;background:rgba(239,68,68,.07);border-radius:6px;border:1px solid rgba(239,68,68,.2)}
+    .step-tip{font-size:11px;color:#86efac;margin-top:4px;padding:5px 8px;background:rgba(34,197,94,.07);border-radius:6px;border:1px solid rgba(34,197,94,.2)}
+    .guide-section-title{font-size:11px;color:#9AB3DC;text-transform:uppercase;letter-spacing:2px;margin:16px 0 8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.08)}
     .footer{text-align:center;margin-top:18px}
     .footer-a{font-size:10px;color:rgba(255,255,255,.2);letter-spacing:1px}
     .footer-b{font-size:9px;color:rgba(255,255,255,.12);margin-top:2px}
-
-    /* HIDDEN */
     .hidden{display:none!important}
   </style>
 </head>
 <body>
 <div class="wrap">
 
-  <!-- HEADER -->
   <div class="hdr">
     <img class="logo" id="logoImg" alt="Movatis Piscine & Spa">
-    <div class="hdr-sub">Calculateur chimie</div>
+    <div class="hdr-sub">Calculateur chimie & électrolyse</div>
   </div>
 
-  <!-- NAV -->
   <div class="nav">
     <div class="nav-btn on-ph" id="nav-ph" onclick="goTab('ph')">⚗️ pH</div>
     <div class="nav-btn" id="nav-chlore" onclick="goTab('chlore')">💧 Chlore</div>
     <div class="nav-btn" id="nav-sel" onclick="goTab('sel')">🧂 Sel</div>
+    <div class="nav-btn" id="nav-cellule" onclick="goTab('cellule')">⚡ Cellule</div>
   </div>
 
   <!-- ═══════════════ TAB pH ═══════════════ -->
   <div id="tab-ph">
     <div class="card">
-
-      <!-- Volume -->
       <div class="sec">
         <label class="lbl">Volume du bassin (m³)</label>
         <div class="slider-row">
@@ -189,8 +192,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Cible -->
       <div class="sec" style="margin-bottom:14px">
         <label class="lbl">pH cible</label>
         <div class="cible-toggle">
@@ -198,14 +199,10 @@
           <div class="cible-btn" id="cib-68" onclick="setCible(6.8)">6,8 — Chlore choc</div>
         </div>
       </div>
-
-      <!-- Sous-onglets pH- / pH+ -->
       <div class="subtabs">
         <div class="subtab on-moins" id="sub-moins" onclick="setPhMode('moins')">📉 pH− à ajouter</div>
         <div class="subtab" id="sub-plus" onclick="setPhMode('plus')">📈 pH+ à ajouter</div>
       </div>
-
-      <!-- pH actuel -->
       <div class="sec" style="margin-bottom:18px">
         <div class="status-row">
           <label class="lbl" style="margin-bottom:0">pH actuel mesuré</label>
@@ -213,8 +210,6 @@
         </div>
         <div class="ph-grid" id="ph-grid"></div>
       </div>
-
-      <!-- Résultat -->
       <div class="res ok" id="ph-res"></div>
       <div class="passes hidden" id="ph-passes"></div>
       <div class="conseil hidden" id="ph-conseil"></div>
@@ -224,8 +219,6 @@
   <!-- ═══════════════ TAB CHLORE ═══════════════ -->
   <div id="tab-chlore" class="hidden">
     <div class="card">
-
-      <!-- Volume -->
       <div class="sec">
         <label class="lbl">Volume du bassin (m³)</label>
         <div class="slider-row">
@@ -236,8 +229,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Type traitement -->
       <div class="sec" style="margin-bottom:14px">
         <label class="lbl">Type de traitement</label>
         <div class="type-btns">
@@ -245,8 +236,6 @@
           <div class="type-btn tb-on" id="cl-choc" onclick="setClType('choc')">🔴 Choc<br><span style="font-size:10px;opacity:.7">20 g/m³</span></div>
         </div>
       </div>
-
-      <!-- FCL mesuré -->
       <div class="sec" style="margin-bottom:18px">
         <div class="status-row">
           <label class="lbl" style="margin-bottom:0">FCL mesuré (mg/L)</label>
@@ -254,14 +243,10 @@
         </div>
         <div class="ph-grid" id="cl-grid"></div>
       </div>
-
-      <!-- Badge info -->
       <div class="info-badge ib-green" id="cl-badge">
         <span style="font-size:16px">💡</span>
         <span id="cl-badge-txt"></span>
       </div>
-
-      <!-- Résultat -->
       <div class="res action-green" id="cl-res"></div>
       <div class="conseil c-green" id="cl-conseil" style="margin-top:10px">
         ⚠️ Verser le soir, <strong>réparti sur le plan d'eau</strong> · Filtration en marche · Ne pas baigner tant que FCL > 3 mg/L · pH entre 6,8 et 7,6 avant de choquer
@@ -272,8 +257,6 @@
   <!-- ═══════════════ TAB SEL ═══════════════ -->
   <div id="tab-sel" class="hidden">
     <div class="card">
-
-      <!-- Volume -->
       <div class="sec">
         <label class="lbl">Volume du bassin (m³)</label>
         <div class="slider-row">
@@ -284,8 +267,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Sel actuel -->
       <div class="sec">
         <div class="status-row">
           <label class="lbl" style="margin-bottom:0">Sel actuel (g/L)</label>
@@ -293,19 +274,160 @@
         </div>
         <div class="ph-grid" id="sel-grid"></div>
       </div>
-
-      <!-- Badge cible -->
       <div class="info-badge ib-yellow">
         <span style="font-size:16px">🧂</span>
         <span style="font-weight:600">Cible : 4–5 g/L</span>
         <span style="opacity:.65;margin-left:6px">électrolyseur au sel standard</span>
       </div>
-
-      <!-- Résultat -->
       <div class="res ok" id="sel-res"></div>
       <div class="conseil c-yellow hidden" id="sel-conseil">
         💡 Verser le sel <strong>devant les buses de refoulement</strong> · Filtration en marche au moins 24h · Remesurer avant de relancer l'électrolyseur
       </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════ TAB CELLULE ═══════════════ -->
+  <div id="tab-cellule" class="hidden">
+    <div class="card">
+
+      <!-- Type cellule -->
+      <div class="sec" style="margin-bottom:16px">
+        <label class="lbl">Type de cellule</label>
+        <div class="cell-type-btns">
+          <div class="cell-type-btn ctb-on" id="ctyp-mp" onclick="setCellType('mp')">
+            ⬜ Monopolaire<br><span style="font-size:10px;opacity:.7">Bague blanche · MP</span>
+          </div>
+          <div class="cell-type-btn" id="ctyp-mx_ns" onclick="setCellType('mx_ns')">
+            ⬛ Mixte NS<br><span style="font-size:10px;opacity:.7">Bague noire · Normal Salt</span>
+          </div>
+          <div class="cell-type-btn" id="ctyp-mx_ls" onclick="setCellType('mx_ls')">
+            ⬛ Mixte LS<br><span style="font-size:10px;opacity:.7">Bague noire · Low Salt</span>
+          </div>
+          <div class="cell-type-btn" id="ctyp-mx_uls" onclick="setCellType('mx_uls')">
+            ⬛ Mixte ULS<br><span style="font-size:10px;opacity:.7">Bague noire · Ultra Low Salt</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Badge info sel -->
+      <div class="info-badge ib-purple" id="cell-sel-badge" style="margin-bottom:14px">
+        <span style="font-size:14px">🧂</span>
+        <span id="cell-sel-txt">Sel min 2,5 g/L · Conseillé 5 g/L</span>
+      </div>
+
+      <!-- Saisie tensions -->
+      <div class="cell-diag-row">
+        <div class="cell-diag-col">
+          <div class="cell-diag-lbl">⊕ Tension polarité +</div>
+          <div class="tension-grid" id="tgrid-pos"></div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:6px">
+            <input type="text" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" class="num-in" id="cell-vp-in" placeholder="V" style="width:60px;font-size:15px" oninput="cellVolInput('pos')">
+            <span class="num-unit">Vdc</span>
+          </div>
+        </div>
+        <div class="cell-diag-col">
+          <div class="cell-diag-lbl">⊖ Tension polarité −</div>
+          <div class="tension-grid" id="tgrid-neg"></div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:6px">
+            <input type="text" inputmode="decimal" pattern="[0-9]*[.,]?[0-9]*" class="num-in" id="cell-vn-in" placeholder="V" style="width:60px;font-size:15px" oninput="cellVolInput('neg')">
+            <span class="num-unit">Vdc</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Courant optionnel -->
+      <div class="sec" style="margin-bottom:14px">
+        <label class="lbl">Courant mesuré (A) — optionnel · pince ampèremétrique DC</label>
+        <div style="display:flex;align-items:center;gap:10px">
+          <input type="range" min="0" max="30" step="0.5" value="0" id="cell-amp-range" oninput="cellAmpSlider(this.value)" style="flex:1;accent-color:#a78bfa">
+          <div class="num-wrap">
+            <input type="text" inputmode="decimal" class="num-in" id="cell-amp-in" value="0" style="width:60px;font-size:15px" oninput="cellAmpInput(this.value)">
+            <span class="num-unit">A</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Résultats -->
+      <div class="res ok hidden" id="cell-res-pos"></div>
+      <div class="res ok hidden" id="cell-res-neg" style="margin-top:8px"></div>
+      <div class="res ok hidden" id="cell-res-amp" style="margin-top:8px"></div>
+      <div class="conseil c-purple hidden" id="cell-conseil" style="margin-top:10px"></div>
+
+      <!-- Tableau de référence -->
+      <div style="margin-top:18px">
+        <div class="guide-section-title">Tableau de référence tensions</div>
+        <table class="ref-table">
+          <tr>
+            <th>Cellule</th><th>Normal ✓</th><th>Fin vie ⚠</th><th>HS ✗</th>
+          </tr>
+          <tr><td>Monopolaire</td><td class="tg">3–6 V</td><td class="tw">6–9 V</td><td class="tr">&gt;9 V</td></tr>
+          <tr><td>Mixte NS</td><td class="tg">5–12 V</td><td class="tw">12–14 V</td><td class="tr">&gt;14 V</td></tr>
+          <tr><td>Mixte LS</td><td class="tg">5–14 V</td><td class="tw">14–18 V</td><td class="tr">&gt;18 V</td></tr>
+          <tr><td>Mixte ULS</td><td class="tg">14–18 V</td><td class="tw">18–20 V</td><td class="tr">&gt;20 V</td></tr>
+        </table>
+        <div style="font-size:10px;color:rgba(154,179,220,.6);margin-top:6px">Tension &lt; 2 V sur toute cellule → panne boîtier (carte de puissance)</div>
+      </div>
+    </div>
+
+    <!-- Guide pince -->
+    <div class="card" style="margin-top:14px">
+      <div class="guide-section-title" style="margin-top:0">Guide — utilisation de la pince ampèremétrique</div>
+
+      <div class="guide-step">
+        <div class="step-num">1</div>
+        <div class="step-content">
+          <div class="step-title">Préparer l'appareil</div>
+          <div class="step-body">L'électrolyseur doit être en marche à <strong>100 % de production</strong> depuis <strong>plus de 2 minutes</strong>. Vérifier que la LED verte est allumée.</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">2</div>
+        <div class="step-content">
+          <div class="step-title">Réglage du multimètre — tension</div>
+          <div class="step-body">Position <strong>Vdc (= ou ⎓)</strong> · Calibre <strong>20 V continu</strong>. Brancher les sondes : rouge sur + (borne rouge cellule), noir sur − (borne noire).<br>Mesurer d'abord en polarité +, noter, puis en polarité −.</div>
+          <div class="step-tip">💡 Faire la mesure directement sur les bornes de la cellule, pas sur le câble</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">3</div>
+        <div class="step-content">
+          <div class="step-title">Réglage de la pince — courant</div>
+          <div class="step-body">Utiliser obligatoirement une <strong>pince ampèremétrique courant continu (DC / A=)</strong>. Un ampèremètre simple est inutilisable ici.<br>Position <strong>A= (DC)</strong> · Calibre adapté (ex : 20 A ou 40 A).<br>Entourer <strong>un seul fil</strong> de la cellule (pas les deux en même temps).</div>
+          <div class="step-warn">⚠ Pince AC uniquement = mesure fausse (affiche 0 ou valeur incorrecte)</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">4</div>
+        <div class="step-content">
+          <div class="step-title">Interpréter le courant</div>
+          <div class="step-body">Le courant est fixé par la configuration de l'appareil — il ne change <strong>pas avec l'usure</strong>. La valeur attendue est inscrite dans l'<strong>ID code</strong> sur l'étiquette (ex : 2011<strong>08</strong>00 → 8 A).<br>Si LED verte allumée + courant mesuré → <strong>la cellule produit du chlore</strong>.</div>
+          <div class="step-tip">💡 Passer en mode Low Salt fait baisser le courant et monter la tension (~+2 Vdc)</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">5</div>
+        <div class="step-content">
+          <div class="step-title">Test de la bassine (confirmation visuelle)</div>
+          <div class="step-body">Placer la cellule dans une bassine d'eau salée, <strong>connexions hors d'eau</strong>. Si production : nuage gazeux visible et odeur de chlore détectable.</div>
+        </div>
+      </div>
+
+      <div class="guide-step">
+        <div class="step-num">6</div>
+        <div class="step-content">
+          <div class="step-title">Vérifications visuelles avant de conclure</div>
+          <div class="step-body">Avant de diagnostiquer la cellule HS, contrôler systématiquement :<br>
+          · Taux de sel (trop bas = tension haute)<br>
+          · Plaques entartrées ou rongées<br>
+          · Cosses oxydées ou fils brûlés<br>
+          · Connecteur câble sous coffret</div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -317,20 +439,21 @@
 
 <script>
 // ─── LOGO BASE64 ──────────────────────────────────────────────────────────────
-document.getElementById('logoImg').src = 'data:image/png;base64,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';
+document.getElementById('logoImg').src = 'data:image/png;base64,/9j/4AAQSkZJRgABAgAAAQABAAD/wAARCABwAaQDACIAAREBAhEB/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMAAAERAhEAPwD3+iiigBkkscKb5ZFRfVjgUkU8M4JhlSQDglGBx+Vcz8Q/+RSl/wCuqfzrmPA1w+j+IlsJnxFf26SJnoSV3L/Miuylg3UoSrJ7dPTUzlO0lE9RooorjNApGYKpZiAoGSSeBS1yfxB1T7D4eNsjYmu28sAddvVv6D8aunB1JqC3Ym7K508V1bzsVinikYDOEcE4qWvMPAFo9j4wu7aT76WZ3exJQkfrXp9b4vDLDzUU73VyYT5lcKKKK5SwooooAKKKKACiiigAooooAKKKKACiiigAooooAKK4zRNXv7v4ganZT3LNbQRyeXHgADDqB/OuzrWrRlS5ebqk/vJUrhWZqXiDS9InjhvrtYpHGQpBPHqcdK065DxP4JPiDU469GnjWreORQVYHIIOQfauQ8T+CT4g1OO9juBAQgR1ZN2QO4/OumhGnKolUdkTJtLQ6xHWSNZEYMjAFWB4Ip1QWVqlhYwWsZJSGMICepwMVPWclFSaWqKQUUUVIBRRRQAUUUUAFFFFABRRRQAUUUUAFMlmjgjMkrqiDqWOBT64DxHfy3ep3EQY+VE2FXsc9zW1Gk6suVCk7K52UOr6dcSCOK5Rs9M5qe5vbazVWupkjDHALHrXnFbeieH59QlW4uFKQKcgHq5/wq6+F9nByvew4z5nsdlFfWk0gjimRnPQA81ZrgNQ0y50icSKWaLOVcf0q9aeI5kAW5QOP7y8GufEYJ8vPB3RcaiektjsKKxbbxBZTECTdCf9rp+db9ccoyjujVSTCiiipGFFFFABRRRQByvxD/5FKX/AK6p/OuW12yePwr4f1yDKzW8caMw9Byp/Aj9a6n4h/8AIpS/9dU/nU2lWEeqeALWylHyzWgUH0PY/gcV6mHq+xw0Z9p/oYyjzSt5G1pt9HqWmW15EQVmjDfQ9x+Bq1XC/Dm/ZYLzRpzia2csqn0zhvyP867quLE0vZVXBbdPQ0hLmVwrzm72+J/iRHb/AH7Sx+8Ox2nJ/wDHsCu117Uk0jRLq9Y4KIQg9WPAP51zfw7001zSp8Y825bP+6P8A69b4T93GdftonV/5Er4moeBumL/eHf0ryv4XaMdQ8QnUHUrHYqGBP99hx+Q/nXqf2C22bPJXb9KjsrC3sLSOytowkEYwFArqpVfYxm0ruVlf5/oTKN2jkvhpuvGv5d2Vj2oBn16n+VdhLLFCm+WRUQdSxwKjtraG1iEcEYRB0AqG9skvkKtIyehXqK5atT2tRzfUUVy6E8c8MxIilRyDztbNS1xQ024ikzHM8QPTB4rc0/XA5SK7wrehHT8an6tJx5ouzHGom7M2KKKKxNAooooAKKKKACiiigAooooAKKKKACmSzRwxmSV1RB1LHAFZA1y4v9UXTdLhVpM/NM/RV9cVuJZoU33DNcSD+J/6DoBXV7KNNfvHr27mkYtb7kOm6vaajuEEvzjqjcGtKuVvdCljbzbEhHHJjY/KfpVay8Q3cH7qch1HBV+Rj0Ncs6EoO8HdGMoSTseqUV5SfFWqg8TL+NdPouuT3iiCeVvNHQn7rcVjUwc4K71Rias7I7KiiiuUsKKKKACiiigDlfiH/wAilL/11T+da2gf8i5p3/XBKyfF8E8iQSxRvIiAgiNSSPwFUfCHiK2ltotNuZVguI1CRhjhXHpz0NehFuphl72qiY6cs7dGdpRRRXnmoUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//9k=';
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 var state = {
   tab: 'ph',
-  ph: { vol:50, actuel:7.8, cible:7.2, mode:'moins' },
-  cl: { vol:50, type:'choc', fcl:0.5 },
-  sel: { vol:50, actuel:3.0 }
+  ph:  { vol:50, actuel:7.8, cible:7.2, mode:'moins' },
+  cl:  { vol:50, type:'choc', fcl:0.5 },
+  sel: { vol:50, actuel:3.0 },
+  cell:{ type:'mp', vpos:null, vneg:null, amp:0 }
 };
 
 // ─── NAVIGATION ───────────────────────────────────────────────────────────────
 function goTab(t) {
   state.tab = t;
-  ['ph','chlore','sel'].forEach(function(x) {
+  ['ph','chlore','sel','cellule'].forEach(function(x) {
     document.getElementById('tab-'+x).classList.toggle('hidden', x!==t);
     var btn = document.getElementById('nav-'+x);
     btn.className = 'nav-btn' + (x===t ? ' on-'+x : '');
@@ -341,7 +464,6 @@ function goTab(t) {
 // PH
 // ═══════════════════════════════════════════════════════════════════════════════
 var PH_VALS = [6.0,6.2,6.4,6.6,6.8,7.0,7.2,7.4,7.6,7.8,8.0];
-
 function phColor(ph) {
   if(ph<6.6)  return '#ef4444';
   if(ph<7.0)  return '#f97316';
@@ -358,339 +480,332 @@ function phLabel(ph) {
   if(ph<=7.8) return 'Trop élevé';
   return 'Très élevé';
 }
-
 function buildPhGrid() {
   var g = document.getElementById('ph-grid');
   g.innerHTML = '';
   PH_VALS.forEach(function(v) {
     var b = document.createElement('button');
-    b.className = 'ph-btn';
-    b.textContent = v.toFixed(1);
-    b.id = 'phb-'+v.toFixed(1);
+    b.className = 'ph-btn'; b.textContent = v.toFixed(1); b.id = 'phb-'+v.toFixed(1);
     b.onclick = function(){ state.ph.actuel=v; renderPh(); pulse('ph-res'); };
     g.appendChild(b);
   });
 }
-
 function renderPhGrid() {
   var s = state.ph;
-  var dot = document.getElementById('ph-dot');
-  var stxt = document.getElementById('ph-status-txt');
   var col = phColor(s.actuel);
-  dot.style.background = col; dot.style.boxShadow = '0 0 8px '+col;
-  stxt.textContent = phLabel(s.actuel); stxt.style.color = col;
-
+  document.getElementById('ph-dot').style.background=col; document.getElementById('ph-dot').style.boxShadow='0 0 8px '+col;
+  document.getElementById('ph-status-txt').textContent=phLabel(s.actuel); document.getElementById('ph-status-txt').style.color=col;
   PH_VALS.forEach(function(v) {
     var b = document.getElementById('phb-'+v.toFixed(1));
     if(!b) return;
-    var c = phColor(v), sel = v===s.actuel, isCib = v===s.cible;
-    b.style.border = sel?'2px solid '+c : isCib?'1px dashed rgba(34,197,94,.45)':'1px solid rgba(255,255,255,.1)';
-    b.style.background = sel?c+'22':'rgba(255,255,255,.04)';
-    b.style.color = sel?c : isCib?'#86efac':'#888';
-    b.style.fontWeight = sel?'700':'400';
-    b.classList.toggle('is-cible', isCib && !sel);
+    var c=phColor(v), sel=v===s.actuel, isCib=v===s.cible;
+    b.style.border=sel?'2px solid '+c:isCib?'1px dashed rgba(34,197,94,.45)':'1px solid rgba(255,255,255,.1)';
+    b.style.background=sel?c+'22':'rgba(255,255,255,.04)';
+    b.style.color=sel?c:isCib?'#86efac':'#888';
+    b.style.fontWeight=sel?'700':'400';
+    b.classList.toggle('is-cible', isCib&&!sel);
   });
 }
-
 function setCible(c) {
-  state.ph.cible = c;
-  document.getElementById('cib-72').classList.toggle('active', c===7.2);
-  document.getElementById('cib-68').classList.toggle('active', c===6.8);
+  state.ph.cible=c;
+  document.getElementById('cib-72').classList.toggle('active',c===7.2);
+  document.getElementById('cib-68').classList.toggle('active',c===6.8);
   renderPh();
 }
-
 function setPhMode(m) {
-  state.ph.mode = m;
+  state.ph.mode=m;
   document.getElementById('sub-moins').className='subtab'+(m==='moins'?' on-moins':'');
   document.getElementById('sub-plus').className='subtab'+(m==='plus'?' on-plus':'');
   renderPh();
 }
-
 function phVol(v)  { state.ph.vol=parseInt(v); document.getElementById('ph-vol-in').value=v; renderPh(); }
 function phVolN(v) { var n=parseFloat(String(v).replace(',','.')); if(n>0&&n<=3000){state.ph.vol=n;} renderPh(); }
-
 function fmt(g) {
-  if(g>=1000) return {val:(Math.round(g/10)/100).toFixed(2), u:'kg'};
-  return {val:Math.round(g), u:'g'};
+  if(g>=1000) return {val:(Math.round(g/10)/100).toFixed(2),u:'kg'};
+  return {val:Math.round(g),u:'g'};
 }
-
 function renderPh() {
   renderPhGrid();
-  var s = state.ph;
-  var delta = Math.round((s.actuel - s.cible)*10)/10;
-  var res = document.getElementById('ph-res');
-  var passes = document.getElementById('ph-passes');
-  var conseil = document.getElementById('ph-conseil');
+  var s=state.ph;
+  var delta=Math.round((s.actuel-s.cible)*10)/10;
+  var res=document.getElementById('ph-res');
+  var passes=document.getElementById('ph-passes');
+  var conseil=document.getElementById('ph-conseil');
   passes.classList.add('hidden'); conseil.classList.add('hidden');
-
   if(s.mode==='moins') {
-    if(delta<=0) {
-      res.className='res ok';
-      res.innerHTML='<div class="res-ok-ico">✅</div>'
-        +'<div class="res-ok-title" style="color:#86efac">Pas de pH− nécessaire</div>'
-        +'<div class="res-ok-sub" style="color:#9AB3DC">'+(delta<0?'pH trop bas — passer en mode pH+':'pH déjà à la cible')+'</div>';
-      return;
-    }
-    // DOSE pH- : 10g/m³ = -0.3 unité
-    var totalG = (10/0.3)*s.vol*delta;
-    var d = fmt(totalG);
-    var nb = Math.ceil(delta/0.3);
-    var dp = nb>1?fmt(totalG/nb):null;
+    if(delta<=0) { res.className='res ok'; res.innerHTML='<div class="res-ok-ico">✅</div><div class="res-ok-title" style="color:#86efac">Pas de pH− nécessaire</div><div class="res-ok-sub" style="color:#9AB3DC">'+(delta<0?'pH trop bas — passer en mode pH+':'pH déjà à la cible')+'</div>'; return; }
+    var totalG=(10/0.3)*s.vol*delta; var d=fmt(totalG); var nb=Math.ceil(delta/0.3); var dp=nb>1?fmt(totalG/nb):null;
     res.className='res action-red';
-    res.innerHTML='<div class="res-lbl">Dose pH− à ajouter</div>'
-      +'<div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div>'
-      +'<div class="res-prod" style="color:#fca5a5">Piscimar PM-601 · pH− poudre</div>'
-      +'<div class="res-desc">pour corriger <strong>−'+delta+'</strong> unité'+(delta>1?'s':'')+' de pH</div>'
-      +'<div class="res-formula">pH '+s.actuel.toFixed(1)+' → '+s.cible.toFixed(1)+' · '+s.vol+' m³ · 10g/m³ par −0,3 unité</div>';
+    res.innerHTML='<div class="res-lbl">Dose pH− à ajouter</div><div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div><div class="res-prod" style="color:#fca5a5">Piscimar PM-601 · pH− poudre</div><div class="res-desc">pour corriger <strong>−'+delta+'</strong> unité'+(delta>1?'s':'')+'</div><div class="res-formula">pH '+s.actuel.toFixed(1)+' → '+s.cible.toFixed(1)+' · '+s.vol+' m³ · 10g/m³ par −0,3 unité</div>';
     if(nb>1&&dp){ renderPasses('ph-passes',nb,dp); passes.classList.remove('hidden'); }
-    conseil.className='conseil c-red';
-    conseil.innerHTML='💡 Verser <strong>devant les buses de refoulement</strong> · Filtration en marche · Ne pas mélanger avec les produits chlorés · Remesurer après 1h';
-    conseil.classList.remove('hidden');
-
-  } else { // PLUS
-    if(delta>=0) {
-      res.className='res ok';
-      res.innerHTML='<div class="res-ok-ico">✅</div>'
-        +'<div class="res-ok-title" style="color:#86efac">Pas de pH+ nécessaire</div>'
-        +'<div class="res-ok-sub" style="color:#9AB3DC">'+(delta>0?'pH trop élevé — passer en mode pH−':'pH déjà à la cible')+'</div>';
-      return;
-    }
-    // DOSE pH+ : 15g/m³ = +0.2 unité
-    var deltaP = Math.abs(delta);
-    var totalGP = (15/0.2)*s.vol*deltaP;
-    var dP = fmt(totalGP);
-    var nbP = Math.ceil(deltaP/0.2);
-    var dpP = nbP>1?fmt(totalGP/nbP):null;
+    conseil.className='conseil c-red'; conseil.innerHTML='💡 Verser <strong>devant les buses de refoulement</strong> · Filtration en marche · Remesurer après 1h'; conseil.classList.remove('hidden');
+  } else {
+    if(delta>=0) { res.className='res ok'; res.innerHTML='<div class="res-ok-ico">✅</div><div class="res-ok-title" style="color:#86efac">Pas de pH+ nécessaire</div><div class="res-ok-sub" style="color:#9AB3DC">'+(delta>0?'pH trop élevé — passer en mode pH−':'pH déjà à la cible')+'</div>'; return; }
+    var deltaP=Math.abs(delta); var totalGP=(15/0.2)*s.vol*deltaP; var dP=fmt(totalGP); var nbP=Math.ceil(deltaP/0.2); var dpP=nbP>1?fmt(totalGP/nbP):null;
     res.className='res action-green';
-    res.innerHTML='<div class="res-lbl">Dose pH+ à ajouter</div>'
-      +'<div class="res-val">'+dP.val+'<span class="res-unit">'+dP.u+'</span></div>'
-      +'<div class="res-prod" style="color:#86efac">Piscimar PM-602 · pH+ poudre</div>'
-      +'<div class="res-desc">pour corriger <strong>+'+deltaP+'</strong> unité'+(deltaP>1?'s':'')+' de pH</div>'
-      +'<div class="res-formula">pH '+s.actuel.toFixed(1)+' → '+s.cible.toFixed(1)+' · '+s.vol+' m³ · 15g/m³ par +0,2 unité</div>';
+    res.innerHTML='<div class="res-lbl">Dose pH+ à ajouter</div><div class="res-val">'+dP.val+'<span class="res-unit">'+dP.u+'</span></div><div class="res-prod" style="color:#86efac">Piscimar PM-602 · pH+ poudre</div><div class="res-desc">pour corriger <strong>+'+deltaP+'</strong> unité'+(deltaP>1?'s':'')+'</div><div class="res-formula">pH '+s.actuel.toFixed(1)+' → '+s.cible.toFixed(1)+' · '+s.vol+' m³ · 15g/m³ par +0,2 unité</div>';
     if(nbP>1&&dpP){ renderPasses('ph-passes',nbP,dpP); passes.classList.remove('hidden'); }
-    conseil.className='conseil c-green';
-    conseil.innerHTML='💡 Verser <strong>devant les buses de refoulement</strong> · Filtration en marche · Remesurer après 1h · Ne pas verser en même temps que les produits chlorés';
-    conseil.classList.remove('hidden');
+    conseil.className='conseil c-green'; conseil.innerHTML='💡 Verser <strong>devant les buses de refoulement</strong> · Filtration en marche · Remesurer après 1h'; conseil.classList.remove('hidden');
   }
 }
-
 function renderPasses(id,nb,dp) {
-  var el = document.getElementById(id);
-  var h = '<div class="passes-title">⚡ Apport en '+nb+' fois recommandé</div><div class="passes-grid">';
+  var el=document.getElementById(id);
+  var h='<div class="passes-title">⚡ Apport en '+nb+' fois recommandé</div><div class="passes-grid">';
   for(var i=0;i<nb;i++) h+='<div class="passe"><div class="passe-val">'+dp.val+'<span class="passe-unit">'+dp.u+'</span></div><div class="passe-lbl">Passe '+(i+1)+'</div></div>';
   h+='</div><div class="passes-note">Attendre 4h entre chaque passe · Remesurer avant la suivante</div>';
   el.innerHTML=h;
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// CHLORE  — RITOCAL GR PM-531 (70% chlore actif)
-// Entretien : 10 g/m³   Choc : 20 g/m³   (source fiche produit PM-531)
+// CHLORE
 // ═══════════════════════════════════════════════════════════════════════════════
 function clVol(v)  { state.cl.vol=parseInt(v); document.getElementById('cl-vol-in').value=v; renderCl(); }
 function clVolN(v) { var n=parseFloat(String(v).replace(',','.')); if(n>0&&n<=3000){state.cl.vol=n;} renderCl(); }
-
-// FCL grid — 0.0 à 3.0 par pas de 0.5
-var FCL_VALS = [0.0,0.5,1.0,1.5,2.0,2.5,3.0];
-
+var FCL_VALS=[0.0,0.5,1.0,1.5,2.0,2.5,3.0];
 function fclColor(v) {
-  if(v===0)          return '#ef4444';
-  if(v<1.0)          return '#f97316';
-  if(v>=1.0&&v<=2.0) return '#22c55e';
-  if(v<=3.0)         return '#eab308';
-  return '#ef4444';
+  if(v===0)return '#ef4444'; if(v<1.0)return '#f97316';
+  if(v>=1.0&&v<=2.0)return '#22c55e'; if(v<=3.0)return '#eab308'; return '#ef4444';
 }
 function fclLabel(v) {
-  if(v===0)          return '⚠ Absent';
-  if(v<1.0)          return 'Insuffisant';
-  if(v>=1.0&&v<=2.0) return '✓ Optimal';
-  if(v<=3.0)         return 'Élevé';
-  return 'Trop élevé';
+  if(v===0)return '⚠ Absent'; if(v<1.0)return 'Insuffisant';
+  if(v>=1.0&&v<=2.0)return '✓ Optimal'; if(v<=3.0)return 'Élevé'; return 'Trop élevé';
 }
-
 function buildClGrid() {
-  var g = document.getElementById('cl-grid');
-  g.innerHTML='';
+  var g=document.getElementById('cl-grid'); g.innerHTML='';
   FCL_VALS.forEach(function(v) {
-    var b = document.createElement('button');
-    b.className='ph-btn';
-    b.textContent=v.toFixed(1);
-    b.id='clb-'+v.toFixed(1);
+    var b=document.createElement('button');
+    b.className='ph-btn'; b.textContent=v.toFixed(1); b.id='clb-'+v.toFixed(1);
     b.onclick=function(){ state.cl.fcl=v; renderCl(); pulse('cl-res'); };
     g.appendChild(b);
   });
 }
-
 function renderClGrid() {
-  var fcl = state.cl.fcl;
-  var col = fclColor(fcl);
-  var dot = document.getElementById('cl-dot');
-  var stxt = document.getElementById('cl-status-txt');
-  dot.style.background=col; dot.style.boxShadow='0 0 8px '+col;
-  stxt.textContent=fclLabel(fcl); stxt.style.color=col;
+  var fcl=state.cl.fcl; var col=fclColor(fcl);
+  document.getElementById('cl-dot').style.background=col; document.getElementById('cl-dot').style.boxShadow='0 0 8px '+col;
+  document.getElementById('cl-status-txt').textContent=fclLabel(fcl); document.getElementById('cl-status-txt').style.color=col;
   FCL_VALS.forEach(function(v) {
-    var b = document.getElementById('clb-'+v.toFixed(1));
-    if(!b) return;
+    var b=document.getElementById('clb-'+v.toFixed(1)); if(!b) return;
     var c=fclColor(v), sel=v===fcl;
     b.style.border=sel?'2px solid '+c:'1px solid rgba(255,255,255,.1)';
     b.style.background=sel?c+'22':'rgba(255,255,255,.04)';
-    b.style.color=sel?c:'#888';
-    b.style.fontWeight=sel?'700':'400';
+    b.style.color=sel?c:'#888'; b.style.fontWeight=sel?'700':'400';
   });
 }
-
 function setClType(t) {
-  state.cl.type = t;
-  document.getElementById('cl-entretien').classList.toggle('tb-on', t==='entretien');
-  document.getElementById('cl-choc').classList.toggle('tb-on', t==='choc');
+  state.cl.type=t;
+  document.getElementById('cl-entretien').classList.toggle('tb-on',t==='entretien');
+  document.getElementById('cl-choc').classList.toggle('tb-on',t==='choc');
   renderCl();
 }
-
 function renderCl() {
   renderClGrid();
-  var s = state.cl;
-  var badge = document.getElementById('cl-badge-txt');
-  var res = document.getElementById('cl-res');
-
-  // Cibles FCL : entretien 1-2 mg/L → cible 1.5, choc → cible 5 mg/L
-  var cible_fcl = s.type==='choc' ? 5.0 : 1.5;
-  var delta_fcl = Math.max(0, cible_fcl - s.fcl);
-
-  // RITOCAL GR 70% chlore actif
-  // Pour élever le FCL de 1 mg/L dans 1 m³ : 1g de Cl actif pur
-  // RITOCAL = 70% chlore actif → 1/0.7 ≈ 1.43 g de RITOCAL par mg/L par m³
-  var dose_par_mgl_m3 = 1 / 0.70; // g de RITOCAL / (mg/L) / m³
-  var totalG = Math.round(dose_par_mgl_m3 * delta_fcl * s.vol);
-  var d = fmt(totalG);
-
+  var s=state.cl; var badge=document.getElementById('cl-badge-txt'); var res=document.getElementById('cl-res');
+  var cible_fcl=s.type==='choc'?5.0:1.5;
+  var delta_fcl=Math.max(0,cible_fcl-s.fcl);
+  var dose_par_mgl_m3=1/0.70;
+  var totalG=Math.round(dose_par_mgl_m3*delta_fcl*s.vol);
+  var d=fmt(totalG);
   if(s.type==='choc') {
     badge.innerHTML='<strong>Choc</strong> · FCL cible : 5 mg/L · pH 6,8 recommandé avant traitement · Verser le soir';
     document.getElementById('cl-badge').className='info-badge ib-green';
-    if(delta_fcl===0) {
-      res.className='res ok';
-      res.innerHTML='<div class="res-ok-ico">✅</div>'
-        +'<div class="res-ok-title" style="color:#86efac">FCL suffisant</div>'
-        +'<div class="res-ok-sub" style="color:#9AB3DC">FCL mesuré '+s.fcl.toFixed(1)+' mg/L ≥ cible '+cible_fcl+' mg/L</div>';
-    } else {
-      res.className='res action-green';
-      res.innerHTML='<div class="res-lbl">RITOCAL GR à ajouter</div>'
-        +'<div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div>'
-        +'<div class="res-prod" style="color:#86efac">Piscimar PM-531 · RITOCAL GR 70%</div>'
-        +'<div class="res-desc">FCL <strong>'+s.fcl.toFixed(1)+'</strong> → <strong>'+cible_fcl+' mg/L</strong> · Δ +'+delta_fcl.toFixed(1)+' mg/L</div>'
-        +'<div class="res-formula">'+s.vol+' m³ × '+delta_fcl.toFixed(1)+' mg/L × 1,43 g/m³ = '+totalG+' g</div>';
-    }
+    if(delta_fcl===0) { res.className='res ok'; res.innerHTML='<div class="res-ok-ico">✅</div><div class="res-ok-title" style="color:#86efac">FCL suffisant</div><div class="res-ok-sub" style="color:#9AB3DC">FCL mesuré '+s.fcl.toFixed(1)+' mg/L ≥ cible '+cible_fcl+' mg/L</div>'; }
+    else { res.className='res action-green'; res.innerHTML='<div class="res-lbl">RITOCAL GR à ajouter</div><div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div><div class="res-prod" style="color:#86efac">Piscimar PM-531 · RITOCAL GR 70%</div><div class="res-desc">FCL <strong>'+s.fcl.toFixed(1)+'</strong> → <strong>'+cible_fcl+' mg/L</strong> · Δ +'+delta_fcl.toFixed(1)+' mg/L</div><div class="res-formula">'+s.vol+' m³ × '+delta_fcl.toFixed(1)+' mg/L × 1,43 g/m³ = '+totalG+' g</div>'; }
   } else {
     badge.innerHTML='<strong>Entretien</strong> · FCL cible : 1–2 mg/L · Début de saison ou après analyse';
     document.getElementById('cl-badge').className='info-badge ib-blue';
-    if(delta_fcl===0) {
-      res.className='res ok';
-      res.innerHTML='<div class="res-ok-ico">✅</div>'
-        +'<div class="res-ok-title" style="color:#86efac">FCL suffisant</div>'
-        +'<div class="res-ok-sub" style="color:#9AB3DC">FCL mesuré '+s.fcl.toFixed(1)+' mg/L ≥ cible entretien</div>';
-    } else {
-      res.className='res action-blue';
-      res.innerHTML='<div class="res-lbl">RITOCAL GR à ajouter</div>'
-        +'<div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div>'
-        +'<div class="res-prod" style="color:#9AB3DC">Piscimar PM-531 · RITOCAL GR 70%</div>'
-        +'<div class="res-desc">FCL <strong>'+s.fcl.toFixed(1)+'</strong> → <strong>'+cible_fcl+' mg/L</strong> · Δ +'+delta_fcl.toFixed(1)+' mg/L</div>'
-        +'<div class="res-formula">'+s.vol+' m³ × '+delta_fcl.toFixed(1)+' mg/L × 1,43 g/m³ = '+totalG+' g</div>';
-    }
+    if(delta_fcl===0) { res.className='res ok'; res.innerHTML='<div class="res-ok-ico">✅</div><div class="res-ok-title" style="color:#86efac">FCL suffisant</div><div class="res-ok-sub" style="color:#9AB3DC">FCL mesuré '+s.fcl.toFixed(1)+' mg/L ≥ cible entretien</div>'; }
+    else { res.className='res action-blue'; res.innerHTML='<div class="res-lbl">RITOCAL GR à ajouter</div><div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div><div class="res-prod" style="color:#9AB3DC">Piscimar PM-531 · RITOCAL GR 70%</div><div class="res-desc">FCL <strong>'+s.fcl.toFixed(1)+'</strong> → <strong>'+cible_fcl+' mg/L</strong> · Δ +'+delta_fcl.toFixed(1)+' mg/L</div><div class="res-formula">'+s.vol+' m³ × '+delta_fcl.toFixed(1)+' mg/L × 1,43 g/m³ = '+totalG+' g</div>'; }
   }
 }
 
 // ═══════════════════════════════════════════════════════════════════════════════
-// SEL — Cible 4–5 g/L (4000–5000 mg/L)
-// Dose : (cible - actuel) × volume × 1000 grammes
-// Cible retenue : 4.5 g/L (milieu de la plage)
+// SEL
 // ═══════════════════════════════════════════════════════════════════════════════
-var SEL_VALS = [1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0];
-var SEL_CIBLE = 4.5;
-
+var SEL_VALS=[1.0,1.5,2.0,2.5,3.0,3.5,4.0,4.5,5.0,5.5,6.0];
+var SEL_CIBLE=4.5;
 function selColor(v) {
-  if(v<2.5)        return '#ef4444';
-  if(v<4.0)        return '#f97316';
-  if(v>=4.0&&v<=5.0) return '#22c55e';
-  if(v<=5.5)       return '#eab308';
-  return '#ef4444';
+  if(v<2.5)return '#ef4444'; if(v<4.0)return '#f97316';
+  if(v>=4.0&&v<=5.0)return '#22c55e'; if(v<=5.5)return '#eab308'; return '#ef4444';
 }
 function selLabel(v) {
-  if(v<2.5)         return '⚠ Très insuffisant';
-  if(v<4.0)         return 'Trop bas';
-  if(v>=4.0&&v<=5.0) return '✓ Optimal';
-  if(v<=5.5)        return 'Légèrement élevé';
-  return '⚠ Trop élevé';
+  if(v<2.5)return '⚠ Très insuffisant'; if(v<4.0)return 'Trop bas';
+  if(v>=4.0&&v<=5.0)return '✓ Optimal'; if(v<=5.5)return 'Légèrement élevé'; return '⚠ Trop élevé';
 }
-
 function buildSelGrid() {
-  var g = document.getElementById('sel-grid');
-  g.innerHTML='';
+  var g=document.getElementById('sel-grid'); g.innerHTML='';
   SEL_VALS.forEach(function(v) {
-    var b = document.createElement('button');
-    b.className='ph-btn';
-    b.textContent=v.toFixed(1);
-    b.id='selb-'+v.toFixed(1);
+    var b=document.createElement('button');
+    b.className='ph-btn'; b.textContent=v.toFixed(1); b.id='selb-'+v.toFixed(1);
     b.onclick=function(){ state.sel.actuel=v; renderSel(); pulse('sel-res'); };
     g.appendChild(b);
   });
 }
-
 function renderSelGrid() {
-  var s = state.sel;
-  var dot = document.getElementById('sel-dot');
-  var stxt = document.getElementById('sel-status-txt');
-  var col = selColor(s.actuel);
-  dot.style.background=col; dot.style.boxShadow='0 0 8px '+col;
-  stxt.textContent=selLabel(s.actuel); stxt.style.color=col;
-
+  var s=state.sel; var col=selColor(s.actuel);
+  document.getElementById('sel-dot').style.background=col; document.getElementById('sel-dot').style.boxShadow='0 0 8px '+col;
+  document.getElementById('sel-status-txt').textContent=selLabel(s.actuel); document.getElementById('sel-status-txt').style.color=col;
   SEL_VALS.forEach(function(v) {
-    var b = document.getElementById('selb-'+v.toFixed(1));
-    if(!b) return;
+    var b=document.getElementById('selb-'+v.toFixed(1)); if(!b) return;
     var c=selColor(v), sel=v===s.actuel, isCib=v===SEL_CIBLE;
     b.style.border=sel?'2px solid '+c:isCib?'1px dashed rgba(251,191,36,.45)':'1px solid rgba(255,255,255,.1)';
     b.style.background=sel?c+'22':'rgba(255,255,255,.04)';
-    b.style.color=sel?c:isCib?'#fde68a':'#888';
-    b.style.fontWeight=sel?'700':'400';
-    b.classList.toggle('is-cible', isCib&&!sel);
+    b.style.color=sel?c:isCib?'#fde68a':'#888'; b.style.fontWeight=sel?'700':'400';
+    b.classList.toggle('is-cible',isCib&&!sel);
+  });
+}
+function selVol(v)  { state.sel.vol=parseInt(v); document.getElementById('sel-vol-in').value=v; renderSel(); }
+function selVolN(v) { var n=parseFloat(String(v).replace(',','.')); if(n>0&&n<=3000){state.sel.vol=n;} renderSel(); }
+function renderSel() {
+  renderSelGrid();
+  var s=state.sel; var res=document.getElementById('sel-res'); var conseil=document.getElementById('sel-conseil');
+  if(s.actuel>=4.0&&s.actuel<=5.0) {
+    res.className='res ok'; res.innerHTML='<div class="res-ok-ico">✅</div><div class="res-ok-title" style="color:#fde68a">Sel dans la cible</div><div class="res-ok-sub" style="color:#9AB3DC">'+s.actuel.toFixed(1)+' g/L · Aucun ajout nécessaire</div>';
+    conseil.classList.add('hidden'); return;
+  }
+  if(s.actuel>5.0) {
+    res.className='res ok'; res.innerHTML='<div class="res-ok-ico">⚠️</div><div class="res-ok-title" style="color:#f97316">Sel trop élevé</div><div class="res-ok-sub" style="color:#9AB3DC">Dilution partielle nécessaire</div>';
+    conseil.classList.add('hidden'); return;
+  }
+  var deltaGL=SEL_CIBLE-s.actuel; var kg=Math.round(deltaGL*s.vol*10)/10;
+  var d=kg>=1?{val:kg.toFixed(1),u:'kg'}:{val:Math.round(kg*1000),u:'g'};
+  res.className='res action-yellow';
+  res.innerHTML='<div class="res-lbl">Sel à ajouter</div><div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div><div class="res-prod" style="color:#fde68a">Sel pour piscine · Granulés fins</div><div class="res-desc">pour passer de <strong>'+s.actuel.toFixed(1)+'</strong> à <strong>'+SEL_CIBLE.toFixed(1)+' g/L</strong></div><div class="res-formula">'+s.vol+' m³ × '+deltaGL.toFixed(1)+' g/L × 1000 = '+Math.round(kg*1000)+' g</div>';
+  conseil.classList.remove('hidden');
+}
+
+// ═══════════════════════════════════════════════════════════════════════════════
+// CELLULE
+// ═══════════════════════════════════════════════════════════════════════════════
+var CELL_SEUILS = {
+  mp:     { ok:[3,6],    fin:[6,9],    hs:9,   sel:'Sel min 2,5 g/L · Conseillé 5 g/L (NS)' },
+  mx_ns:  { ok:[5,12],   fin:[12,14],  hs:14,  sel:'Sel min 2,5 g/L · Conseillé 5 g/L (NS)' },
+  mx_ls:  { ok:[5,14],   fin:[14,18],  hs:18,  sel:'Sel min 1,5 g/L · Conseillé 2,5 g/L (LS)' },
+  mx_uls: { ok:[14,18],  fin:[18,20],  hs:20,  sel:'Sel min 0,5 g/L · Conseillé 1 g/L (ULS)' }
+};
+var CELL_TVALS = [0,2,4,6,8,10,12,14,16,18,20,22];
+
+function setCellType(t) {
+  state.cell.type=t;
+  ['mp','mx_ns','mx_ls','mx_uls'].forEach(function(x) {
+    document.getElementById('ctyp-'+x).classList.toggle('ctb-on',x===t);
+  });
+  document.getElementById('cell-sel-txt').textContent = CELL_SEUILS[t].sel;
+  buildTensionGrids();
+  renderCell();
+}
+
+function buildTensionGrids() {
+  ['pos','neg'].forEach(function(pol) {
+    var g = document.getElementById('tgrid-'+pol);
+    g.innerHTML='';
+    CELL_TVALS.forEach(function(v) {
+      var b=document.createElement('button');
+      b.className='t-btn'; b.textContent=v; b.id='tb-'+pol+'-'+v;
+      b.onclick=function(){
+        if(pol==='pos') state.cell.vpos=v; else state.cell.vneg=v;
+        var inp=document.getElementById('cell-v'+(pol==='pos'?'p':'n')+'-in');
+        inp.value=v;
+        renderCell();
+      };
+      g.appendChild(b);
+    });
+  });
+  colorTensionBtns();
+}
+
+function cellVolInput(pol) {
+  var inp=document.getElementById('cell-v'+(pol==='pos'?'p':'n')+'-in');
+  var n=parseFloat(String(inp.value).replace(',','.'));
+  if(!isNaN(n)&&n>=0&&n<=30) {
+    if(pol==='pos') state.cell.vpos=n; else state.cell.vneg=n;
+    renderCell();
+  }
+}
+
+function cellAmpSlider(v) {
+  state.cell.amp=parseFloat(v);
+  document.getElementById('cell-amp-in').value=parseFloat(v).toFixed(1);
+  renderCell();
+}
+function cellAmpInput(v) {
+  var n=parseFloat(String(v).replace(',','.'));
+  if(!isNaN(n)&&n>=0) { state.cell.amp=n; document.getElementById('cell-amp-range').value=Math.min(n,30); renderCell(); }
+}
+
+function cellDiag(v, s) {
+  if(v<2)   return {cls:'action-blue',  ico:'🔵', txt:'Tension très basse', detail:'Tension < 2 V → panne boîtier probable (carte de puissance). La cellule n\'est pas en cause.'};
+  if(v<=s.ok[1])  return {cls:'action-green',  ico:'✅', txt:'Production normale', detail:'Tension de '+v.toFixed(1)+' V dans la plage nominale ('+s.ok[0]+'–'+s.ok[1]+' V).'};
+  if(v<=s.fin[1]) return {cls:'action-orange', ico:'⚠️', txt:'Cellule en fin de vie', detail:'Tension de '+v.toFixed(1)+' V — zone de fin de vie ('+s.fin[0]+'–'+s.fin[1]+' V). Prévoir remplacement.'};
+  return {cls:'action-red', ico:'❌', txt:'Cellule HS ou fil débranché', detail:'Tension de '+v.toFixed(1)+' V dépasse le seuil HS (> '+s.hs+' V). Vérifier connexions et plaques.'};
+}
+
+function colorTensionBtns() {
+  var s=CELL_SEUILS[state.cell.type];
+  ['pos','neg'].forEach(function(pol) {
+    var selV = pol==='pos' ? state.cell.vpos : state.cell.vneg;
+    CELL_TVALS.forEach(function(v) {
+      var b=document.getElementById('tb-'+pol+'-'+v); if(!b) return;
+      var isSel=selV===v;
+      var col;
+      if(v<2)        col='#3b82f6';
+      else if(v<=s.ok[1])  col='#22c55e';
+      else if(v<=s.fin[1]) col='#f97316';
+      else           col='#ef4444';
+      b.style.border=isSel?'2px solid '+col:'1px solid rgba(255,255,255,.1)';
+      b.style.background=isSel?col+'33':'rgba(255,255,255,.04)';
+      b.style.color=isSel?col:'#666';
+      b.style.fontWeight=isSel?'700':'400';
+    });
   });
 }
 
-function selVol(v)  { state.sel.vol=parseInt(v); document.getElementById('sel-vol-in').value=v; renderSel(); }
-function selVolN(v) { var n=parseFloat(String(v).replace(',','.')); if(n>0&&n<=3000){state.sel.vol=n;} renderSel(); }
+function renderCell() {
+  colorTensionBtns();
+  var c=state.cell; var s=CELL_SEUILS[c.type];
+  var rp=document.getElementById('cell-res-pos');
+  var rn=document.getElementById('cell-res-neg');
+  var ra=document.getElementById('cell-res-amp');
+  var cons=document.getElementById('cell-conseil');
 
-function renderSel() {
-  renderSelGrid();
-  var s = state.sel;
-  var res = document.getElementById('sel-res');
-  var conseil = document.getElementById('sel-conseil');
-
-  if(s.actuel>=4.0&&s.actuel<=5.0) {
-    res.className='res ok';
-    res.innerHTML='<div class="res-ok-ico">✅</div>'
-      +'<div class="res-ok-title" style="color:#fde68a">Sel dans la cible</div>'
-      +'<div class="res-ok-sub" style="color:#9AB3DC">'+s.actuel.toFixed(1)+' g/L · Aucun ajout nécessaire</div>';
-    conseil.classList.add('hidden');
-    return;
+  function showR(el, v) {
+    var d=cellDiag(v,s);
+    el.className='res '+d.cls;
+    el.innerHTML='<div class="res-ok-ico">'+d.ico+'</div><div class="res-ok-title">'+d.txt+'</div><div class="res-ok-sub" style="color:#9AB3DC">'+d.detail+'</div>';
+    el.classList.remove('hidden');
   }
 
-  if(s.actuel>5.0) {
-    res.className='res ok';
-    res.innerHTML='<div class="res-ok-ico">⚠️</div>'
-      +'<div class="res-ok-title" style="color:#f97316">Sel trop élevé</div>'
-      +'<div class="res-ok-sub" style="color:#9AB3DC">Dilution partielle nécessaire — vidanger et remplacer une partie de l\'eau</div>';
-    conseil.classList.add('hidden');
-    return;
-  }
+  if(c.vpos!==null) showR(rp,c.vpos); else rp.classList.add('hidden');
+  if(c.vneg!==null) showR(rn,c.vneg); else rn.classList.add('hidden');
 
-  // Calcul : (cible - actuel) g/L × volume m³ × 1000 L/m³ ÷ 1000 g/kg = kg
-  var deltaGL = SEL_CIBLE - s.actuel;
-  var kg = Math.round(deltaGL * s.vol * 10) / 10;
-  var d = kg>=1 ? {val:kg.toFixed(1),u:'kg'} : {val:Math.round(kg*1000),u:'g'};
-  res.className='res action-yellow';
-  res.innerHTML='<div class="res-lbl">Sel à ajouter</div>'
-    +'<div class="res-val">'+d.val+'<span class="res-unit">'+d.u+'</span></div>'
-    +'<div class="res-prod" style="color:#fde68a">Sel pour piscine · Granulés fins</div>'
-    +'<div class="res-desc">pour passer de <strong>'+s.actuel.toFixed(1)+'</strong> à <strong>'+SEL_CIBLE.toFixed(1)+' g/L</strong></div>'
-    +'<div class="res-formula">'+s.vol+' m³ × '+deltaGL.toFixed(1)+' g/L × 1000 = '+Math.round(kg*1000)+' g</div>';
-  conseil.classList.remove('hidden');
+  // Courant
+  if(c.amp>0) {
+    ra.className='res action-purple';
+    ra.innerHTML='<div class="res-ok-ico">⚡</div><div class="res-ok-title" style="color:#c4b5fd">Courant : '+c.amp.toFixed(1)+' A</div><div class="res-ok-sub" style="color:#9AB3DC">LED verte allumée = production en cours. Comparer à l\'ID code sur l\'étiquette de l\'appareil.</div>';
+    ra.classList.remove('hidden');
+  } else if(c.amp===0 && (c.vpos!==null||c.vneg!==null)) {
+    ra.className='res ok'; ra.innerHTML='<div class="res-ok-sub" style="color:#9AB3DC">Courant non mesuré — utiliser pince ampèremétrique DC pour confirmation</div>';
+    ra.classList.remove('hidden');
+  } else ra.classList.add('hidden');
+
+  // Conseil global
+  var hasHS = (c.vpos!==null&&c.vpos>s.hs)||(c.vneg!==null&&c.vneg>s.hs);
+  var hasFin = !hasHS && ((c.vpos!==null&&c.vpos>s.ok[1])||(c.vneg!==null&&c.vneg>s.ok[1]));
+  var hasLow = (c.vpos!==null&&c.vpos<2)||(c.vneg!==null&&c.vneg<2);
+  if(hasHS) {
+    cons.className='conseil c-red';
+    cons.innerHTML='⚠️ Tension HS sur une ou deux polarités. Avant de conclure à la cellule HS, vérifier impérativement : taux de sel, état visuel des plaques, cosses et connecteurs. Cellule sous garantie → demande de retour SAV obligatoire.';
+    cons.classList.remove('hidden');
+  } else if(hasLow) {
+    cons.className='conseil c-blue';
+    cons.innerHTML='🔵 Tension très basse → la carte de puissance du boîtier est probablement en cause. Tester un autre boîtier si disponible.';
+    cons.classList.remove('hidden');
+  } else if(hasFin) {
+    cons.className='conseil c-yellow';
+    cons.innerHTML='⚠️ Cellule en fin de vie. Le chlore est encore produit mais la cellule s\'use. Prévoir le remplacement avant la prochaine saison.';
+    cons.classList.remove('hidden');
+  } else {
+    cons.classList.add('hidden');
+  }
 }
 
 // ─── PULSE ────────────────────────────────────────────────────────────────────
@@ -703,6 +818,7 @@ function pulse(id) {
 buildPhGrid();
 buildClGrid();
 buildSelGrid();
+buildTensionGrids();
 renderPh();
 renderCl();
 renderSel();
